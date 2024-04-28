@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("images/bg.jpg");
+    background-position: center center;
+    background-size: max(2000px, 138vw);
+    background-repeat: no-repeat;
+    position: relative;
+    height: 1120px;
+
+}
+.main .box{
+    height: 1120px;
+    width: 100%;
+    opacity: 0.58;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+nav{
+    max-width: 75vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: auto;
+    
+}
+nav img{
+    color: red;
+    width: 160px;
+    position: relative;
+    z-index: 10;
+}
+.main .mainbox{
+    height: 640px;
+    width: 450px;
+    background-color: #010000;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+.mainimp{
+    padding: 70px;
+    gap: 10px;
+}
+.mainbox h1{
+    display: block;
+    height: 50px;
+    color: white;
+    padding-bottom: 10px;
+
+}
+.mainimp .hero-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 120px;
+    z-index: 10;
+   
+}
+.btn-email{
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2d2d2d;
+    opacity: 0.9;
+    /* position: relative; */
+    padding: 15px;
+    color: white;
+    font-size: 1rem;
+}
+
+
+.hero-buttons:focus{
+    border-bottom: 2px;
+    border-color: #e87c03;
+}
+.btn-red-sm{
+    background-color: #e50914;
+    color: white;
+    border: 0px ;
+    border-radius: 4px;
+    max-width: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 128px;
+    margin-top: 35px;
+}
+div.check{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+.rem{
+    color: rgb(190, 186, 186);
+}
+.help{
+    color: rgb(190, 186, 186);
+    text-decoration: none;
+}
+.new{
+    color: grey;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-top: 65px;
+}
+.now{
+    text-decoration: none;
+    color: white;
+}
+.para{
+    color: #a9a7a7;
+    font-size: 0.8rem;
+    margin-top: 23px;
+}
+#Rememberme{
+    background-color: white;
+    color: white;
+}
+.learn{
+    text-decoration: none;
+    color: #0071eb;
+}
+.now:hover{
+    text-decoration: underline;
+}
+.help:hover{
+    text-decoration: underline;
+}
+.learn:hover{
+    text-decoration: underline;
+}
+.footer{
+    height: 280px;
+    width: 100%;
+    opacity: 0.58;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    
+}
+.questions{
+    color: grey;
+    padding-left: 250px;
+    padding-top: 50px;
+    gap: 120px;
+    max-width: 70vw;
+}
+.foot{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0px;
+    padding-left:250px;
+    padding-top: 30px;
+    max-width: 70vw;
+}
+.footer-item a{
+    color: grey;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.footer-item a:hover{
+    text-decoration: underline;
+}
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.zero{
+    cursor: pointer;
+    color: grey;
+    text-decoration: none;
+}
+.zero:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:620px) {
+    .main{
+        width: 100%;
+    }
+    .footer .questions .foot{
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:650px){
+    .foot{
+        grid-template-columns: repeat(3,1fr);
+        padding-left: 100px;
+    }
+    .questions{
+        padding-left: 100px;
+    }
+    .btn-eng{
+        
+        display: flex;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width:550px) {
+    .mainimp{
+        padding: 50px;
+    }
+    .btn-red-sm {
+        padding: 15px 70px;
+    }
+    .main .mainbox {
+        width: 330px;
+        height: 575px;
+    }
+    .btn-eng{
+        margin-top: 100px;
+    }
+}
+
+.btn-eng{
+    padding:4px 8px;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 6px;
+    border: 1px solid white;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: 250px;
+    max-width: 70vw;
+}
